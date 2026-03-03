@@ -21,7 +21,13 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes
 // app.use("/api/v1/forestguard/oneliner", oneLinerRoutes);
-app.use("/api/v1/forestguard/quiz", quizRoutes);
+app.get("/test", (req, res) => {
+  res.send("Test route working");
+});
+app.use("/api/v1/forestguardhindi/quiz", quizRoutes);
+app.use("/api/v1/forestguardscience/quiz", quizRoutes);
+app.use("/api/v1/forestguardeng/quiz", quizRoutes);
+app.use("/api/v1/forestguardmaths/quiz", quizRoutes);
 
 app.listen(PORT, () => {
   console.log(`App is listening on ${PORT}`);
