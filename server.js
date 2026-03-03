@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get("/test", (req, res) => {
   res.send("Test route working");
 });
+app.use("/api/v1/forestguard/quiz", quizRoutes);
 app.use("/api/v1/forestguardhindi/quiz", quizRoutes);
 app.use("/api/v1/forestguardscience/quiz", quizRoutes);
 app.use("/api/v1/forestguardeng/quiz", quizRoutes);
