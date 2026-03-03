@@ -28,6 +28,7 @@ app.use("/api/v1/forestguardhindi/quiz", quizRoutes);
 app.use("/api/v1/forestguardscience/quiz", quizRoutes);
 app.use("/api/v1/forestguardeng/quiz", quizRoutes);
 app.use("/api/v1/forestguardmaths/quiz", quizRoutes);
+app.use("/api/v1/forestguardmpgk/quiz", quizRoutes);
 
 app.listen(PORT, () => {
   console.log(`App is listening on ${PORT}`);
