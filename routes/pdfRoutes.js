@@ -40,7 +40,7 @@ router.get("/get-pdf", (req, res) => {
 
     // 🔹 Preview (for now same PDF)
     previewUrl:
-      "https://res.cloudinary.com/dozaonw8z/raw/upload/v1777190552/c9koo0setrmr80muxrhe",
+      "https://res.cloudinary.com/dozaonw8z/raw/upload/v1777191450/kokhzhqi5kvtn2pnd3um",
 
     // 🔹 Full PDF (after purchase)
     fullPdfUrl:
