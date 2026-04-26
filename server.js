@@ -33,7 +33,9 @@ app.use("/api/v1/forestguardeng/quiz", quizRoutes);
 app.use("/api/v1/forestguardmaths/quiz", quizRoutes);
 app.use("/api/v1/forestguardmpgk/quiz", quizRoutes);
 app.use("/api/v1/forestpractice/quiz", quizRoutes);
-
+console.log("CLOUD_NAME:", process.env.CLOUD_NAME);
+console.log("API_KEY:", process.env.API_KEY);
+console.log("API_SECRET:", process.env.API_SECRET);
 app.listen(PORT, () => {
   console.log(`App is listening on ${PORT}`);
 });
